@@ -14,7 +14,7 @@ namespace BladeFlurryCharges
             if (Settings.Enable)
             {
                 var buffs = GameController.Game.IngameState.Data.LocalPlayer.GetComponent<Life>().Buffs;
-                if (buffs.Exists(b => b.Name == "charged_attack" && b.Charges == 6))
+                if (buffs.Exists(b => b.Name == "virulent_arrow_counter" && b.Charges == 5))
                 {
                     if (!Settings.LeftClick)
                         MouseTools.MouseLeftClickEvent();
